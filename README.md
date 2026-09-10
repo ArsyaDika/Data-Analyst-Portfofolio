@@ -10,3 +10,33 @@ Here is my CV in [pdf](https://github.com/ArsyaDika/Data-Analyst-Portfofolio/blo
 
 
 This is a repository to showcase skills, share projects, and track my progress in data analytics-related topics.
+
+# Table of Contents
+- About
+- Portfolio Projects
+  - Python
+    - Judul Project yang menggunakan python
+
+  - SQL
+  - Excel / Google Sheets
+  - Tableau ---> (link Tableau)
+  - Power BI
+- Education --> [link to penjelasan education]
+- Certificates --> [link to penjelasan sertifikat]
+- Contact --> LinkedIn, etc.
+
+# Portfolio Projects
+In this section I will list data analytics projects briefly describing the technology stack used to solve cases.
+### **Judul Project**
+
+**Code:** Link to data yang digunakan dari kaggle
+
+**Goal:** To determine what factors contribute the most to a
+
+**Description:** The project focused on analyzing a dataset of *movies* released between x and x. The dataset included movie titles, ratings, genres, release dates, budgets, gross earnings, and other relevant information. The project involved loading the data, cleaning and preprocessing it, performing exploratory data analysis (EDA), analyzing the correlation between budget and gross earnings, and implementing Pearson's correlation statistical analysis.
+
+**Skills:** Data cleaning, data analysis, correlation matrices, hypothesis testing, data visualization
+
+**Tools:** Python, Pandas, Numpy, Matpolib, Seaborn
+
+**Results:** Using Python functions, the analysis revealed that votes and budget have the highest correlation with gross earnings, while the company has no significant correlation.
