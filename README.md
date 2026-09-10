@@ -6,7 +6,7 @@ During my courses, I honed my ability to work with complex data and developed a 
 
 In my free time, I enjoy exploring new data analysis tools and techniques, and I am always looking for opportunities to expand my knowledge and skills. Whether working on a team or independently, I am driven by the thrill of discovering new insights and the satisfaction of using data to solve complex problems.
 
-Here is my CV in [pdf](CONTRIBUTING.md) for more details.
+Here is my CV in [pdf](https://github.com/ArsyaDika/Data-Analyst-Portfofolio/blob/0612b2733c40cfd9164c92dfb4146127e4ca02a7/Resume%20Arsya%20Dika.pdf) for more details.
 
 
 This is a repository to showcase skills, share projects, and track my progress in data analytics-related topics.
