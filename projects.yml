@@ -1,0 +1,82 @@
+# Daftar proyek portfolio.
+# Tambah proyek baru dengan menyalin satu blok di bawah. Situs membaca file ini
+# langsung, jadi cukup edit, commit, dan push: tidak perlu mengubah HTML.
+#
+# Kolom:
+#   id        : pengenal unik, huruf kecil dan tanda hubung
+#   title     : judul proyek
+#   question  : pertanyaan yang dijawab proyek (1 kalimat)
+#   summary   : ringkasan hasil (1–2 kalimat)
+#   category  : WebGIS | Analisis Spasial | Python | Remote Sensing
+#   tools     : daftar tools
+#   image     : gambar preview di assets/img/
+#   location  : [longitude, latitude] untuk titik di peta, kosongkan jika global
+#   featured  : true untuk ditampilkan lebih besar
+#   links     : repo, demo, report (opsional)
+
+- id: sppg-semarang
+  title: WebGIS Keterjangkauan SPPG Kota Semarang
+  question: Sekolah mana yang belum terjangkau SPPG dalam 10 menit berkendara, dan di mana SPPG baru sebaiknya dibangun?
+  summary: Dashboard interaktif dengan isochrone OpenRouteService untuk 128 SPPG dan 823 sekolah, ringkasan cakupan per jenjang, dan 5 rekomendasi lokasi berbasis grid 1 km.
+  category: WebGIS
+  tools: [MapLibre GL JS, Turf.js, Chart.js, OpenRouteService, Python, GitHub Actions]
+  image: assets/img/sppg-webgis.jpg
+  location: [110.42, -7.02]
+  featured: true
+  links:
+    repo: https://github.com/ArsyaDika/Arsya-Dika_WEBGIS_SPPG_Final-Project
+    demo: https://arsyadika.github.io/Arsya-Dika_WEBGIS_SPPG_Final-Project/
+
+- id: rs-mcda-semarang
+  title: Pemilihan Lokasi Rumah Sakit Baru (MCDA)
+  question: Di mana rumah sakit baru paling dibutuhkan agar layanan kesehatan Semarang lebih merata?
+  summary: Grid analysis multi-kriteria (penduduk, usia rentan, akses transportasi, fasilitas eksisting), dilanjutkan site analysis dan cek rawan banjir. Area 4 dan 10 direkomendasikan.
+  category: Analisis Spasial
+  tools: [MAPID, MCDA, Site Analysis]
+  image: assets/img/mcda-rs.jpg
+  location: [110.45, -7.05]
+  featured: true
+  links:
+    repo: https://github.com/ArsyaDika/Arsya-Dika_Location-Analytics-Part-2_Task-3
+
+- id: faskes-qgis
+  title: Area Tidak Terlayani Fasilitas Kesehatan
+  question: Wilayah Semarang mana yang berada di luar jangkauan rumah sakit (3 km) dan puskesmas (1,5 km)?
+  summary: Buffer, merge, join spasial per kecamatan, dan difference terhadap batas kota, ditutup dengan usulan titik fasilitas baru di dekat jaringan jalan.
+  category: Analisis Spasial
+  tools: [QGIS, OpenStreetMap]
+  image: assets/img/faskes-qgis.jpg
+  location: [110.38, -7.0]
+  links:
+    repo: https://github.com/ArsyaDika/Arsya-Dika_GIS-Fundamental_Task-1
+
+- id: gap-layanan
+  title: Kesenjangan Layanan Kesehatan (ArcGIS Pro & MAPID)
+  question: Mengapa fasilitas kesehatan menumpuk di pusat kota, dan wilayah mana yang akan tertinggal?
+  summary: Analisis deskriptif dan prediktif dengan heatmap, isochrone 10 menit, dan analisis radius, dikerjakan di dua platform.
+  category: Analisis Spasial
+  tools: [ArcGIS Pro, MAPID]
+  image: assets/img/gap-layanan.jpg
+  location: [110.41, -6.97]
+  links:
+    repo: https://github.com/ArsyaDika/Arsya-Dika_Location-Analytics-Part-1_Task-2
+
+- id: banjir-python
+  title: Eksplorasi Data Kerentanan Banjir
+  question: Parameter medan apa yang paling berkaitan dengan kerentanan banjir pluvial?
+  summary: Eksplorasi 144 ribu titik dengan GeoPandas, termasuk pembersihan NoData raster, distribusi parameter, korelasi, dan peta interaktif Folium.
+  category: Python
+  tools: [Python, GeoPandas, Seaborn, Folium]
+  image: assets/img/banjir-python.jpg
+  links:
+    repo: https://github.com/ArsyaDika/Arsya-Dika_Python-Basic_Task_4
+
+- id: gempa-skoring
+  title: Skoring Bahaya Gempa Global
+  question: Bagaimana mengelompokkan bahaya gempa dari magnitudo, kedalaman, dan frekuensi kejadian?
+  summary: Buffer zona 100 km, klasifikasi tiga parameter, dan skor total 3–9 untuk kelas bahaya rendah, sedang, dan tinggi.
+  category: Python
+  tools: [Python, GeoPandas, Matplotlib]
+  image: assets/img/gempa.jpg
+  links:
+    repo: https://github.com/ArsyaDika/-ArsyaDika-Arsya-Dika_Working-with-Spatial-Data_Task_6
