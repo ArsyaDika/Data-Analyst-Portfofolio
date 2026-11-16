@@ -1,0 +1,16 @@
+# Script dan workflow otomasi yang ditampilkan di bagian "Otomasi".
+
+- title: Isochrone otomatis dengan GitHub Actions
+  description: Menghitung area jangkauan 5, 10, dan 15 menit untuk 128 SPPG lewat OpenRouteService, lalu meng-commit GeoJSON hasilnya. API key tersimpan sebagai secret, tidak pernah sampai ke browser.
+  tools: [Python, OpenRouteService, GitHub Actions]
+  link: https://github.com/ArsyaDika/Arsya-Dika_WEBGIS_SPPG_Final-Project/blob/main/scripts/build_isochrones.py
+
+- title: Pengunduh layer MAPID
+  description: Mengunduh layer dari API MAPID ke GeoJSON lokal sehingga peta web bisa dipublikasikan tanpa menyertakan API key.
+  tools: [Python, MAPID API]
+  link: https://github.com/ArsyaDika/Arsya-Dika_MapLibre_Task-14_dan_15/blob/main/scripts/download_mapid.py
+
+- title: Pipeline geoprocessing GeoPandas
+  description: Reproject, buffer, simplify, clip, dissolve, union, dan hitung luas dalam satu notebook yang bisa dijalankan ulang untuk data baru.
+  tools: [Python, GeoPandas, Shapely]
+  link: https://github.com/ArsyaDika/Arsya-Dika_Working-with-Spatial-Data_Task_5

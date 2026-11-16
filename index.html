@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arsya Dika · GIS Analyst & WebGIS Developer</title>
+<meta name="description" content="Portfolio Arsya Dika: analisis spasial, WebGIS, dan otomasi geoprocessing, dengan latar belakang pertanian.">
+<meta property="og:title" content="Arsya Dika · GIS Analyst & WebGIS Developer">
+<meta property="og:description" content="Analisis spasial, WebGIS, dan otomasi geoprocessing.">
+<meta property="og:image" content="assets/img/sppg-webgis.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="nav">
+  <a href="#top" class="brand">Arsya Dika</a>
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#webmap">Peta</a>
+    <a href="#projects">Proyek</a>
+    <a href="#automation">Otomasi</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <p class="eyebrow">GIS Analyst · WebGIS Developer</p>
+  <h1>Memetakan pertanyaan nyata, dari lahan pertanian sampai layanan kota.</h1>
+  <p class="lead">Saya menggabungkan latar belakang pertanian dengan analisis spasial, peta web interaktif, dan otomasi Python untuk membantu keputusan berbasis lokasi.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">Lihat proyek</a>
+    <a class="btn" href="https://github.com/ArsyaDika" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <p class="label">Tentang</p>
+  <div class="about">
+    <div>
+      <h2>Dari agronomi ke data spasial</h2>
+      <p>Latar belakang saya di bidang pertanian membuat saya terbiasa berpikir tentang lahan, iklim, dan sumber daya. Lewat bootcamp WebGIS Developer dan studi Data Analytics, saya mempelajari cara menjawab pertanyaan seperti itu dengan data: dari geoprocessing di QGIS dan ArcGIS Pro, analisis dengan GeoPandas, sampai dashboard interaktif dengan MapLibre.</p>
+      <p>Fokus saya sekarang adalah keberlanjutan dan pertanian, misalnya memetakan emisi dari budidaya padi, serta analisis keterjangkauan layanan publik.</p>
+    </div>
+    <ul class="skills">
+      <li><b>Desktop GIS</b>QGIS, ArcGIS Pro</li>
+      <li><b>WebGIS</b>MapLibre GL JS, Turf.js, Chart.js</li>
+      <li><b>Python</b>GeoPandas, Shapely, pandas, Folium</li>
+      <li><b>Data & API</b>OpenStreetMap, OpenRouteService, MAPID, WFS</li>
+      <li><b>Otomasi</b>GitHub Actions, script Python</li>
+    </ul>
+  </div>
+</section>
+
+<section id="webmap" class="section">
+  <p class="label">Peta proyek</p>
+  <h2>Lokasi studi kasus</h2>
+  <p class="muted">Klik titik untuk membuka proyeknya.</p>
+  <div id="map" class="map"></div>
+</section>
+
+<section id="projects" class="section">
+  <p class="label">Proyek</p>
+  <h2>Studi kasus</h2>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="project-list"></div>
+</section>
+
+<section id="automation" class="section">
+  <p class="label">Otomasi</p>
+  <h2>Script dan workflow</h2>
+  <p class="muted">Pekerjaan berulang saya ubah menjadi script, supaya analisis bisa dijalankan ulang ketika datanya berubah.</p>
+  <div class="grid three" id="automation-list"></div>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="label">Kontak</p>
+  <h2>Mari berdiskusi</h2>
+  <p>Terbuka untuk peran GIS Analyst, WebGIS Developer, dan proyek pemetaan pertanian atau keberlanjutan.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:arsyadika25@gmail.com">arsyadika25@gmail.com</a>
+    <a class="btn" href="https://github.com/ArsyaDika" target="_blank" rel="noopener">github.com/ArsyaDika</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Arsya Dika · Basemap © OpenStreetMap contributors, OpenFreeMap
+</footer>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
